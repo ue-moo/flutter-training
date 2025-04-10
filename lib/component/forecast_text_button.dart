@@ -30,6 +30,8 @@ class ForecastTextButton extends StatelessWidget {
     super.debugFillProperties(properties);
     properties.add(StringProperty('label', label));
     properties.add(ColorProperty('color', color));
-    properties.add(ObjectFlagProperty('onPressed', onPressed));
+    properties.add(
+      ObjectFlagProperty<VoidCallback>.has('onPressed', onPressed),
+    );
   }
 }
